@@ -16,7 +16,7 @@ To create a Trigger using PL/SQL.
 8. Display the employee table, salary_log table.
 
 ### Program:
-
+```
 CREATE TABLE employe(
   empid NUMBER,
   empname VARCHAR2(10),
@@ -34,7 +34,9 @@ CREATE TABLE salary_log (
 );
 -- Insert the values in the employee table
 insert into employe values(1,'Kar','IT',1000000);
-insert into employe values(2,'Boha','SALES',500000); 
+insert into employe values(2,'Boha','SALES',500000);
+
+```
 
 ### Create employee table:
 
@@ -45,7 +47,7 @@ insert into employe values(2,'Boha','SALES',500000);
 
 
 ### PLSQL Trigger code
-
+```
 -- Create the trigger
 CREATE OR REPLACE TRIGGER log_sal_update
 BEFORE UPDATE ON employe
@@ -70,7 +72,7 @@ SELECT * FROM employe;
 
 -- Display the salary_log table
 SELECT * FROM sal_log;
-
+```
 ### Output:
 
 ![WhatsApp Image 2023-09-29 at 23 08 39](https://github.com/niraunjana/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119395610/505a1a56-28aa-47b9-82cb-5227528c7ba9)
